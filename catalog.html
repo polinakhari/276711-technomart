@@ -24,8 +24,11 @@
             <div class="info">
                 <div class="info__decsription">Интернет-магазин строительных материалов и инструментов для ремонта</div>
                 <div class="contacts"> +7 (812) 555-05-55 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
-                <div class="login">Войти</div>
-                <div class="register">Регистрация</div>
+                <div class="cabinet">
+                    <p class="cabonet__name">Равшан Джамшутович</p>
+                    <a href="#" class="cabinet__item">Мои заказы</a>
+                    <a href="#" class="cabinet__item">Личный кабинет</a>
+                </div>
 
             </div>
             <nav class="nav">
@@ -40,40 +43,61 @@
         </div>
     </header>
     <main class="main-wrapper">
-        <div class="offer">
-            <div class="offer__item">
-                <p class="offer-title">Материалы</p>
-                <a href="#" class="btn">На любой вкус</a>
-            </div>
-            <div class="offer__item">
-                <p class="offer-title">Инструмент</p>
-                <a href="#" class="btn">На все случаи</a>
-            </div>
-            <div class="offer__item">
-                <p class="offer-title">Техника</p>
-                <a href="#" class="btn">Для стройки</a>
-            </div>
-        </div>
-        <div class="slider">
-            <p class="slider__title">Перфораторы</p>
-            <p class="slider__desc">Настоящие мужские игрушки</p>
-        </div>
-        <div class="offer">
-            <div class="offer__item">
-                <p class="offer-title"></p>
-                <a href="#" class="btn"></a>
-            </div>
-            <div class="offer__item">
-                <p class="offer-title"></p>
-                <a href="#" class="btn"></a>
-            </div>
-        </div>
-        <div class="popular">
-            <div class="popular-block">
-                <div class="popular-block__title-block">
-                    <p class="popular-block__title"></p>
-                    <a href="" class="popular-block__btn"></a>
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"></li>
+            <li class="breadcrumbs__item">Каталог</li>
+            <li class="breadcrumbs__item">Инструмент</li>
+            <li class="breadcrumbs__item">Перфораторы</li>
+        </ul>
+        <h1>Перфораторы</h1>
+        <div></div>
+        <form class="" action="index.html" method="post">
+            <fieldset class="filter filter--price-range">
+                <h3 class="filter__title">Цена:</h3>
+
+                <div class="range-controls">
+                    <div class="ange-controls__bar">
+                        <div class="ange-controls__diaposon"></div>
+                    </div>
+                    <div class="toggle toggle--min"></div>
+                    <div class="toggle toggle--max"></div>
                 </div>
+                <div class="filter-price">
+
+                    <label class="filter-price__label filter-price__label--min" for="min">
+                                      <input class="filter-price__input  filter-price__input--min" id="min" type="text" value="0">
+                                  </label>
+                    <label class="filter-price__label filter-price__label--max" for="max">
+                                      <input class="filter-price__input  filter-price__input--max" id="max" type="text" value="30 000">
+                                  </label>
+
+                </div>
+            </fieldset>
+
+            <fieldset class="filter filter--brands">
+                <h3 class="filter__title">Производители</h3>
+                <input class="filter__input" id="checkbox-1" type="checkbox" name="checkbox" value="bosch" checked>
+                <label class="filter__label" for="checkbox-1">Bosch</label>
+                <input class="filter__input" id="checkbox-2" type="checkbox" name="checkbox" value="interscol">
+                <label class="filter__label" for="checkbox-2">Интерскол</label>
+                <input class="filter__input" id="checkbox-3" type="checkbox" name="checkbox" value="makita" checked>
+                <label class="filter__label" for="checkbox-3">Makita</label>
+                <input class="filter__input" id="checkbox-4" type="checkbox" name="checkbox" value="devalt">
+                <label class="filter__label" for="checkbox-4">Dewalt</label>
+                <input class="filter__input" id="checkbox-5" type="checkbox" name="checkbox" value="hitachi">
+                <label class="filter__label" for="checkbox-5">Hitachi</label>
+            </fieldset>
+            <fieldset class="filter filter--supply">
+                <h3 class="filter__title">Питание</h3>
+                <input class="filter__input" id="radio-1" type="radio" name="radiogroup" value="battery" checked>
+                <label class="filter__label" for="radio-1">Аккумуляторные</label>
+                <input class="filter__input" id="radio-2" type="radio" name="radiogroup" value="mains">
+                <label class="filter__label" for="radio-2">Сетевые</label>
+            </fieldset>
+            <button class="catalog-btn" type="submit">Показать</button>
+        </form>
+        <div class="assort">
+            <div class="popular-block">
                 <div class="popular-assort">
                     <div class="popular-assort__item">
                         <img src="" alt="" class="popular-assort__img">
@@ -115,102 +139,79 @@
                         <p class="popular-assort__price-old"></p>
                         <p class="popular-assort__price"></p>
                     </div>
+                    <div class="popular-assort__item">
+                        <img src="" alt="" class="popular-assort__img">
+                        <div class="popular-assort__hvr">
+                            <a href="#" class="popular-assort__buy">Купить</a>
+                            <a href="#" class="popular-assort__save">В закладки</a>
+                        </div>
+                        <p class="popular-assort__title"></p>
+                        <p class="popular-assort__price-old"></p>
+                        <p class="popular-assort__price"></p>
+                    </div>
+                    <div class="popular-assort__item">
+                        <img src="" alt="" class="popular-assort__img">
+                        <div class="popular-assort__hvr">
+                            <a href="#" class="popular-assort__buy">Купить</a>
+                            <a href="#" class="popular-assort__save">В закладки</a>
+                        </div>
+                        <p class="popular-assort__title"></p>
+                        <p class="popular-assort__price-old"></p>
+                        <p class="popular-assort__price"></p>
+                    </div>
+                    <div class="popular-assort__item">
+                        <img src="" alt="" class="popular-assort__img">
+                        <div class="popular-assort__hvr">
+                            <a href="#" class="popular-assort__buy">Купить</a>
+                            <a href="#" class="popular-assort__save">В закладки</a>
+                        </div>
+                        <p class="popular-assort__title"></p>
+                        <p class="popular-assort__price-old"></p>
+                        <p class="popular-assort__price"></p>
+                    </div>
+                    <div class="popular-assort__item">
+                        <img src="" alt="" class="popular-assort__img">
+                        <div class="popular-assort__hvr">
+                            <a href="#" class="popular-assort__buy">Купить</a>
+                            <a href="#" class="popular-assort__save">В закладки</a>
+                        </div>
+                        <p class="popular-assort__title"></p>
+                        <p class="popular-assort__price-old"></p>
+                        <p class="popular-assort__price"></p>
+                    </div>
+                    <div class="popular-assort__item">
+                        <img src="" alt="" class="popular-assort__img">
+                        <div class="popular-assort__hvr">
+                            <a href="#" class="popular-assort__buy">Купить</a>
+                            <a href="#" class="popular-assort__save">В закладки</a>
+                        </div>
+                        <p class="popular-assort__title"></p>
+                        <p class="popular-assort__price-old"></p>
+                        <p class="popular-assort__price"></p>
+                    </div>
+                    <div class="popular-assort__item">
+                        <img src="" alt="" class="popular-assort__img">
+                        <div class="popular-assort__hvr">
+                            <a href="#" class="popular-assort__buy">Купить</a>
+                            <a href="#" class="popular-assort__save">В закладки</a>
+                        </div>
+                        <p class="popular-assort__title"></p>
+                        <p class="popular-assort__price-old"></p>
+                        <p class="popular-assort__price"></p>
+                    </div>
                 </div>
-
             </div>
-            <div class="popular-block">
-                <div class="popular-block__title-block">
-                    <p class="popular-block__title"></p>
-                    <a href="" class="popular-block__btn"></a>
-                </div>
-                <div class="popular-assort">
-                    <div class="popular-assort__item">
-                        <img src="" alt="" class="popular-assort__img">
-
-                    </div>
-                    <div class="popular-assort__item">
-                        <img src="" alt="" class="popular-assort__img">
-
-                    </div>
-                    <div class="popular-assort__item">
-                        <img src="" alt="" class="popular-assort__img">
-
-                    </div>
-                    <div class="popular-assort__item">
-                        <img src="" alt="" class="popular-assort__img">
-
-                    </div>
-                    <div class="popular-assort__item">
-                        <img src="" alt="" class="popular-assort__img">
-
-                    </div>
-                    <div class="popular-assort__item">
-                        <img src="" alt="" class="popular-assort__img">
-
-                    </div>
-                    <div class="popular-assort__item">
-                        <img src="" alt="" class="popular-assort__img">
-
-                    </div>
-                    <div class="popular-assort__item">
-                        <img src="" alt="" class="popular-assort__img">
-
-                    </div>
-
-                </div>
+            <div class="page">
+                <a href="#" class="page__item">1</a>
+                <a href="#" class="page__item">2</a>
+                <a href="#" class="page__item">3</a>
+                <a href="#" class="page__item">Следующая</a>
             </div>
         </div>
-        <div class="service">
-            <div class="service__item">
-                <p class="service__title">Сервисы</p>
-                <p class="service__decs">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-            </div>
-            <ul class="service__capabilities">
-                <li class="capabilities-item">Доставка</li>
-                <li class="capabilities-item">Гарантия</li>
-                <li class="capabilities-item">Кредит</li>
-            </ul>
-            <div class="service__item">
-                <p class="service__title">Доставка</p>
-                <p class="service__decs">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-                <img src="#" alt="Доставка" class="service__img">
-            </div>
-
-            <div class="service__item">
-                <p class="service__title">Гарантия</p>
-                <p class="service__decs">Если купленный у нас товар поломается или заискрит,а&#160;также&#160;в&#160;случае пожара, спровоцированного его возгаранием,вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь
-                    сами.
-                </p>
-                <img src="#" alt="Доставка" class="service__img">
-            </div>
-            <div class="service__item">
-                <p class="service__title">Кредиты</p>
-                <p class="service__decs">Залезть в долговую яму стало проще!Кредитные консультанты придут вам на помощь.</p>
-                <img src="#" alt="Доставка" class="service__img">
-            </div>
-
-        </div>
-        <div class="about-company">
-            <div class="about-company__item">
-                <p class="about-company__title">компания «Техномарт»</p>
-                <p class="about-company__desc">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтера</p>
-                <p class="about-company__desc">Мы можем доставить ваш товар в самые отдаленные точки России!Техномарт работает со многими транспортными компаниями: </p>
-                <ul class="about-company__delivery">
-                    <li class="about-company__delivery-item">Деловые линии</li>
-                    <li class="about-company__delivery-item">Автотрейдинг</li>
-                    <li class="about-company__delivery-item">ЖелДорЭкспедиция</li>
-                </ul>
-                <a href="" class="btn">Побробнее о компании</a>
-            </div>
-            <div class="about-company__item">
-                <p class="about-company__title">Контакты</p>
-                <p class="about-company__desc">Вы можете забрать товар сами, заехав в наш офис:</p>
-                <img src="#" alt="Map" class="about-company__map">
-                <a href="" class="btn">Заблудились? Напипишите нам!</a>
-            </div>
-
-
-
+        <div class="catalog-desc">
+            <h2 class="catalog-desc__title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+            <p class="catalog-desc__desc">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
+                шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
         </div>
     </main>
     <footer>
