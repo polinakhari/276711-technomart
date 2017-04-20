@@ -519,7 +519,7 @@ position: relative;
 
 }
 .service__capabilities::after {
-    content: '';
+    content: "";
     position: absolute;
     right: 0;
     top: -50px;
@@ -678,7 +678,7 @@ margin-bottom: 22px;
       list-style: none;
 }
 .about-company__delivery-item:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 10px;
     left: 0;
@@ -724,14 +724,14 @@ font-size: 13px;
 
 
 .breadcrumbs__item:after {
-    content: '\3e';
+    content: "\3e";
     display: inline-block;
     width: 15px;
     margin: 0 10px 0 11px;
     text-align: center;
     line-height: 18px;
     font-size: 14px;
-    font-family: 'symbols-technomart';
+    font-family: "symbols-technomart";
     color: #c1c6ce;
 }
 h1{
