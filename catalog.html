@@ -11,17 +11,17 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="top">
-            <div class="main-wrapper">
-                <a href="#" class="top__item  top__item--logo">Техномарт</a>
-                <a href="#" class="top__item">Поиск:</a>
-                <a href="#" class="top__item">Закладки: 0</a>
-                <a href="#" class="top__item">Коризина: 0</a>
-                <a href="#" class="top__item">Оформить заказ</a>
+  <header class="header">
+    <div class="top">
+      <div class="main-wrapper">
+        <a href="#" class="top__item  top__item--logo">Техномарт</a>
+        <a href="#" class="top__item  top__item--search">Поиск:</a>
+        <a href="#" class="top__item  top__item--bookmark">Закладки: 0</a>
+        <a href="#" class="top__item top__item--basket">Корзина: <span class="number">0</span></a>
+        <a href="#" class="top__item  top__item--last">Оформить заказ</a>
 
-            </div>
-        </div>
+      </div>
+    </div>
 
             <div class="info main-wrapper">
                 <div class="info__decsription">Интернет-магазин строительных материалов и инструментов для ремонта</div>
@@ -43,7 +43,7 @@
                 <a href="#" class="nav__item">Новости</a>
                 <a href="#" class="nav__item">Спецпредложения </a>
                 <a href="#" class="nav__item">Доставка</a>
-                <a href="#" class="nav__item">Контакты</a>
+                <a href="contacts.html" class="nav__item">Контакты</a>
             </nav>
 
     </header>
@@ -54,16 +54,19 @@
             <li class="breadcrumbs__item">Инструмент</li>
             <li class="breadcrumbs__item">Перфораторы</li>
         </ul>
-        <h1>Перфораторы</h1>
+        <h1 class="catalog-title">Перфораторы</h1>
 
 <div class="row">
         <form  action="index.html" method="post">
+    <div class="filter-header ">
+              <h2 class="filter-header__title">Фильтр:</h2>
+</div>
             <fieldset class="filter filter--price-range">
                 <h3 class="filter__title">Цена:</h3>
 
                 <div class="range-controls">
-                    <div class="ange-controls__bar">
-                        <div class="ange-controls__diaposon"></div>
+                    <div class="range-controls__bar">
+                        <div class="range-controls__diaposon"></div>
                     </div>
                     <div class="toggle toggle--min"></div>
                     <div class="toggle toggle--max"></div>
@@ -104,6 +107,20 @@
         </form>
         <div class="assort  assort--catalog">
             <div class="popular-block">
+              <div class="filter-header ">
+                  <h2 class="filter-header__title">
+                      Сортировка:
+                  </h2>
+                  <div class="sort-direction">
+                      <a class="sort-dir icon-up-dir sort-dir-active" href="#">Вверх</a>
+                      <a class="sort-dir icon-down-dir" href="#">Вниз</a>
+                  </div>
+                  <div class="sort-list">
+                      <a class="sort-item sort-item-active" href="#">По цене</a>
+                      <a class="sort-item" href="#">По типу</a>
+                      <a class="sort-item" href="#">По функционалу</a>
+                  </div>
+              </div>
                 <div class="popular-assort">
                   <div class="popular-assort__item">
                     <img src="img/product_002.jpg" width="127" height="112" alt="" class="popular-assort__img">
@@ -269,7 +286,17 @@
         </div>
       </div>
     </footer>
- <script src="js/script.js"></script>
+    <div class="modal modal-cart">
+        <a class="modal-close modal-cart-close" href="catalog.html">Назад</a>
+        <div class="modal-content modal-cart-content">
+            <p class="modal-text">Товар добавлен в корзину!</p>
+        </div>
+        <div class="modal-footer">
+            <button class="modal-btn btn" type="submit" name="send">Оформить заказ</button>
+            <a class="modal-btn modal-close-btn" href="#">Продолжить покупки</a>
+        </div>
+    </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
